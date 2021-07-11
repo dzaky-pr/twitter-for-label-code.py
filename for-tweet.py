@@ -1,0 +1,13 @@
+import tweepy
+auth = tweepy.OAuthHandler("Type your consumer key here", "Type your consumer secret here") 
+auth.set_access_token("Type your accedd token here", "Type your access token secret here")
+api = tweepy.API(auth)
+print("=============================")
+print("Selamat Datang Dzaky Rifa'i")
+print("=============================")
+print("Mau Nge-Tweet Apa Hari Ini?")
+tweet = input("Masukkan Disini: ")
+api.update_status(status =(tweet))
+print("=============================")
+print ("Done!")
+print("=============================")
